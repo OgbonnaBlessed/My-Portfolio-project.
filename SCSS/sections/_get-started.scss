@@ -1,0 +1,103 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.get-started {
+    padding: 4rem 0;
+    background-color: $gray-200;
+}
+
+.cta-info {
+    padding: 3rem;
+    margin: 1rem 0;
+
+    &__list {
+        position: relative;
+        list-style-type: none;
+        display: block;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        margin-bottom: 0.7rem;
+
+        li::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f00c";
+            font-weight: 600;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// FORM CONTENT 
+.form {
+    padding: 3rem;
+
+    button {
+        border: none;
+        color: $white;
+        text-transform: capitalize;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.shadow-fill {
+    box-shadow: 5px 5px 15px 15px white,
+               -5px -5px 15px 15px white;
+    border-radius: 10px;
+}
+
+.get-started-button {
+    background: rgba(0, 0, 255, 0.767);
+    transition: transform 0.15s linear;
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 0 5px 3px black;
+
+    &:active {
+        transform: translateY(5px);
+    }
+}
+
+.start-your-project {
+    color: black;
+    font-size: 20px;
+}
+
+.submit-button {
+    color: white;
+    background: rgba(0, 0, 255, 0.767);
+
+    &:hover {
+        color: white;
+        background: rgba(0, 0, 255, 0.767);
+    }
+
+    &:active {
+        color: white;
+        background: rgba(0, 0, 255, 0.767);
+        transform: scale(1.01);
+    }
+}
+
+.close-button {
+    border-radius: 20px;
+    
+    &:active {
+        transform: scale(1.05);
+    }
+}
+
+.save-button {
+    border-radius: 20px;
+    
+    &:active {
+        transform: scale(1.05);
+    }
+}

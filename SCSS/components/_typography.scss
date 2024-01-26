@@ -1,0 +1,50 @@
+@use "../custom" as *;
+
+.display-2 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+
+    &--intro {
+        display: block;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    &--description {
+        font-size: 1.5rem;
+        display: block;
+        margin-top: 1.2rem;
+        text-transform: none;
+        color: goldenrod;
+
+        @include media-breakpoint-up (lg) {
+            font-size: 1.5rem;
+            display: inline-block;
+        }
+    }
+}
+
+// Display 3.
+.display-3 {
+    font-family: 'Times New Roman', Times, serif;
+
+    &--title {
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        display: inline-block;
+        background-image: linear-gradient(to right, $primary, #66ff00);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+// Border right.
+
+.border-right {
+    border-right: 0.1rem solid $black;
+    height: 100%;
+}

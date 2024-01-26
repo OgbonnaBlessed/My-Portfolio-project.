@@ -1,0 +1,23 @@
+{
+  "name": "my-portfolio-project",
+  "version": "1.0.0",
+  "description": "Learning bootstrap and building my portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Learning-bootstrap",
+    "plus-sass",
+    "my-portfolio."
+  ],
+  "author": "Ogbonna Blessed.",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.7"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "bootstrap": "^5.3.2"
+  }
+}

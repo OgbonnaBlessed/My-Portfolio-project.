@@ -1,0 +1,28 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.menu {
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 2px 5px white;
+    justify-content: space-between;
+
+    li {
+        padding: 0 0.7rem;
+
+        a {
+            color: $white;
+            text-transform: capitalize;
+            font-weight: 600;
+
+            &:hover {
+                color: #66ff00 !important;
+            }
+        }
+    }
+}
+
+.shadow-bottom {
+    box-shadow: 5px 5px 15px 15px black,
+               -5px -5px 15px 15px black;
+}
